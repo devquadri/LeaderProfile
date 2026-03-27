@@ -1,83 +1,107 @@
-# Portfolio Website - Mohammed Riyazuddin
+# Workspace
 
 ## Overview
 
-A modern, responsive portfolio website built for Mohammed Riyazuddin, a Customer Success and Technical Support Specialist with 5+ years of experience in SaaS platforms. The application showcases professional experience, technical skills, achievements, and provides a contact interface for potential opportunities.
+pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
-The portfolio is designed as a single-page application with smooth scrolling navigation between sections, featuring a clean, professional design with dark/light theme support and accessibility considerations.
+## Stack
 
-## User Preferences
+- **Monorepo tool**: pnpm workspaces
+- **Node.js version**: 24
+- **Package manager**: pnpm
+- **TypeScript version**: 5.9
+- **API framework**: Express 5
+- **Database**: PostgreSQL + Drizzle ORM
+- **Validation**: Zod (`zod/v4`), `drizzle-zod`
+- **API codegen**: Orval (from OpenAPI spec)
+- **Build**: esbuild (CJS bundle)
 
-Preferred communication style: Simple, everyday language.
+## Structure
 
-## System Architecture
+```text
+artifacts-monorepo/
+├── artifacts/              # Deployable applications
+│   ├── api-server/         # Express API server
+│   └── portfolio/          # Mohammed Riyazuddin's portfolio/resume website (React + Vite)
+├── lib/                    # Shared libraries
+│   ├── api-spec/           # OpenAPI spec + Orval codegen config
+│   ├── api-client-react/   # Generated React Query hooks
+│   ├── api-zod/            # Generated Zod schemas from OpenAPI
+│   └── db/                 # Drizzle ORM schema + DB connection
+├── scripts/                # Utility scripts (single workspace package)
+│   └── src/                # Individual .ts scripts, run via `pnpm --filter @workspace/scripts run <script>`
+├── pnpm-workspace.yaml     # pnpm workspace (artifacts/*, lib/*, lib/integrations/*, scripts)
+├── tsconfig.base.json      # Shared TS options (composite, bundler resolution, es2022)
+├── tsconfig.json           # Root TS project references
+└── package.json            # Root package with hoisted devDeps
+```
 
-### Frontend Architecture
-- **Framework**: React 18 with TypeScript for type safety and modern component patterns
-- **Routing**: Wouter for lightweight client-side routing
-- **Styling**: Tailwind CSS with custom design system and CSS variables for theming
-- **UI Components**: shadcn/ui component library built on Radix UI primitives
-- **State Management**: TanStack Query for server state management and React hooks for local state
-- **Build Tool**: Vite for fast development and optimized production builds
+## Portfolio Website (`artifacts/portfolio`)
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript for full-stack type safety
-- **Architecture Pattern**: RESTful API design with modular route structure
-- **Storage Interface**: Abstracted storage layer with in-memory implementation (ready for database integration)
-- **Development Server**: Vite middleware integration for seamless development experience
+A clean, minimal portfolio/resume website for Mohammed Riyazuddin (riyaz.blog style).
 
-### Component Structure
-- **Layout Components**: Navigation, Hero, About, Experience, Skills, Achievements, Contact sections
-- **UI Components**: Complete shadcn/ui component library for consistent design
-- **Custom Hooks**: Scroll tracking, theme management, toast notifications, mobile detection
-- **Data Layer**: Structured resume data with TypeScript interfaces for type safety
+- **Stack**: React + Vite, Tailwind CSS, wouter
+- **Data**: All resume data is in `artifacts/portfolio/src/data/resume.ts`
+- **Sections**: Hero, About, Key Achievements, Experience, Skills, Education, Contact
+- **Features**: Dark/light mode toggle, sticky nav, expandable experience cards
+- **Preview path**: `/` (root)
 
-### Design System
-- **Theme Support**: CSS custom properties for light/dark mode with system preference detection
-- **Typography**: Inter font family with responsive scaling
-- **Color Palette**: Primary blue (#3B82F6) and secondary purple (#8B5CF6) with neutral grays
-- **Responsive Design**: Mobile-first approach with Tailwind breakpoints
-- **Animation**: CSS transitions and keyframe animations for smooth interactions
+## TypeScript & Composite Projects
 
-### Development Architecture
-- **Monorepo Structure**: Shared types and schemas between client/server
-- **Path Aliases**: Configured for clean imports (@/ for client, @shared for shared code)
-- **Hot Reload**: Vite HMR for instant development feedback
-- **Error Handling**: Runtime error overlay for development debugging
+Every package extends `tsconfig.base.json` which sets `composite: true`. The root `tsconfig.json` lists all packages as project references. This means:
 
-## External Dependencies
+- **Always typecheck from the root** — run `pnpm run typecheck` (which runs `tsc --build --emitDeclarationOnly`). This builds the full dependency graph so that cross-package imports resolve correctly. Running `tsc` inside a single package will fail if its dependencies haven't been built yet.
+- **`emitDeclarationOnly`** — we only emit `.d.ts` files during typecheck; actual JS bundling is handled by esbuild/tsx/vite...etc, not `tsc`.
+- **Project references** — when package A depends on package B, A's `tsconfig.json` must list B in its `references` array. `tsc --build` uses this to determine build order and skip up-to-date packages.
 
-### Core Technologies
-- **React**: Frontend framework with hooks and modern patterns
-- **TypeScript**: Static typing for development confidence
-- **Express.js**: Backend web framework
-- **Vite**: Build tool and development server
+## Root Scripts
 
-### Database & ORM
-- **Drizzle ORM**: Type-safe database toolkit configured for PostgreSQL
-- **Neon Database**: Serverless PostgreSQL provider integration
-- **Database Schema**: User management with UUID primary keys
+- `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
+- `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
-### UI & Styling
-- **Tailwind CSS**: Utility-first CSS framework
-- **Radix UI**: Accessible UI primitives for complex components
-- **shadcn/ui**: Pre-built component library
-- **Lucide React**: Icon library for consistent iconography
+## Packages
 
-### State & Data Management
-- **TanStack Query**: Server state management with caching
-- **React Hook Form**: Form state management with validation
-- **Zod**: Runtime type validation and schema definition
+### `artifacts/api-server` (`@workspace/api-server`)
 
-### Development Tools
-- **tsx**: TypeScript execution for development
-- **esbuild**: Fast JavaScript bundler for production
-- **PostCSS**: CSS processing with Autoprefixer
-- **Wouter**: Lightweight routing library
+Express 5 API server. Routes live in `src/routes/` and use `@workspace/api-zod` for request and response validation and `@workspace/db` for persistence.
 
-### Session & Authentication (Ready)
-- **connect-pg-simple**: PostgreSQL session store for Express sessions
-- **crypto**: UUID generation for secure user identification
+- Entry: `src/index.ts` — reads `PORT`, starts Express
+- App setup: `src/app.ts` — mounts CORS, JSON/urlencoded parsing, routes at `/api`
+- Routes: `src/routes/index.ts` mounts sub-routers; `src/routes/health.ts` exposes `GET /health` (full path: `/api/health`)
+- Depends on: `@workspace/db`, `@workspace/api-zod`
+- `pnpm --filter @workspace/api-server run dev` — run the dev server
+- `pnpm --filter @workspace/api-server run build` — production esbuild bundle (`dist/index.cjs`)
+- Build bundles an allowlist of deps (express, cors, pg, drizzle-orm, zod, etc.) and externalizes the rest
 
-The application is structured for easy extension with user authentication, content management, and additional portfolio features while maintaining clean separation of concerns and type safety throughout the stack.
+### `lib/db` (`@workspace/db`)
+
+Database layer using Drizzle ORM with PostgreSQL. Exports a Drizzle client instance and schema models.
+
+- `src/index.ts` — creates a `Pool` + Drizzle instance, exports schema
+- `src/schema/index.ts` — barrel re-export of all models
+- `src/schema/<modelname>.ts` — table definitions with `drizzle-zod` insert schemas (no models definitions exist right now)
+- `drizzle.config.ts` — Drizzle Kit config (requires `DATABASE_URL`, automatically provided by Replit)
+- Exports: `.` (pool, db, schema), `./schema` (schema only)
+
+Production migrations are handled by Replit when publishing. In development, we just use `pnpm --filter @workspace/db run push`, and we fallback to `pnpm --filter @workspace/db run push-force`.
+
+### `lib/api-spec` (`@workspace/api-spec`)
+
+Owns the OpenAPI 3.1 spec (`openapi.yaml`) and the Orval config (`orval.config.ts`). Running codegen produces output into two sibling packages:
+
+1. `lib/api-client-react/src/generated/` — React Query hooks + fetch client
+2. `lib/api-zod/src/generated/` — Zod schemas
+
+Run codegen: `pnpm --filter @workspace/api-spec run codegen`
+
+### `lib/api-zod` (`@workspace/api-zod`)
+
+Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used by `api-server` for response validation.
+
+### `lib/api-client-react` (`@workspace/api-client-react`)
+
+Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
+
+### `scripts` (`@workspace/scripts`)
+
+Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.
