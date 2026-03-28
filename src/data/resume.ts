@@ -52,11 +52,11 @@ export const resumeData = {
       period: "Dec 2025 – Now",
       description:
         "As a freelance WordPress/WooCommerce developer, I help businesses buildfast, secure, and conversion-ready websites and online stores. I specialize increating new sites, redesigning existing ones, optimizing performance, fixingcomplex technical issues, and ensuring long-term stability through ongoingmaintenance.",
-      "portfolio websites": [
+      "portfolio_websites": [
         "https://qaafgifts.com",
         "https://qualitycoreconstructions.com/",
         "https://tmrbusiness2.wpcomstaging.com",
-        "And more..."
+        "And more...",
       ],
     },
     {
