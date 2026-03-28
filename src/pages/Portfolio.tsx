@@ -519,7 +519,7 @@ export default function Portfolio() {
       <footer className="max-w-3xl mx-auto px-6 py-8 border-t border-border">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <span>© {new Date().getFullYear()} Mohammed Riyazuddin</span>
-          <span>Hyderabad, India · contact@riyaz.blog</span>
+          <span>Hyderabad, India · contact@mriyazuddin.com</span>
         </div>
       </footer>
     </div>
