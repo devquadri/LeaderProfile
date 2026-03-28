@@ -10,11 +10,7 @@ export default defineConfig({
       "@shared": path.resolve(__dirname, "./shared"),
     },
   },
-  root: path.resolve(__dirname, "client"),
-  build: {
-  outDir: "dist",
-  emptyOutDir: true,
-},
+  
   server: {
     proxy: {
       "/api": {
