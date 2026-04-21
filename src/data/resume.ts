@@ -3,7 +3,7 @@ export const resumeData = {
   title: "Technical Support Leader",
   tagline: "13+ years leading global support teams, scaling operations, and delivering strategic customer experiences.",
   contact: {
-    email: "contact@mriyazuddin.com",
+    email: "riyaz15@gmail.com",
     phone: "+91 863-922-7538",
     linkedin: "https://www.linkedin.com/in/mriyazuddin1/",
     location: "Hyderabad, India",
