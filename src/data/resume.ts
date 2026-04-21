@@ -39,8 +39,9 @@ export const resumeData = {
     "Office Applications",
   ],
   achievements: [
+    "Led a 6-month APAC recruitment surge, independently managing end-to-end hiring trials and agency partnerships to successfully reach 100% of regional headcount targets.",
     "Reduced onboarding and training time by 50% by streamlining workflows, elevating quality standards, and optimizing resource allocation.",
-    "Decreased team's AHT from 17 to 13 mins by executing informal performance enhancement strategies, independent of formal KPIs and goal metrics.",
+    "Decreased team's average handle time from 17 to 13 mins by executing informal performance enhancement strategies, independent of formal KPIs and goal metrics.",
     "Updated several training documents, created/updated over hundred support documents, delivered multiple trainings to upskill the team resulting in 20% improvement in resolution rate.",
     "Consistently achieved over 83% employee engagement score for 4 consecutive years.",
   ],

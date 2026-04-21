@@ -70,7 +70,7 @@ function NavBar({ dark, onToggle }: { dark: boolean; onToggle: () => void }) {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="#"
           className="text-sm font-semibold text-foreground tracking-tight hover:text-muted-foreground transition-colors"
@@ -212,7 +212,7 @@ export default function Portfolio() {
       <NavBar dark={dark} onToggle={() => setDark((d) => !d)} />
 
       {/* Hero */}
-      <section id="about" className="max-w-3xl mx-auto px-6 pt-32 pb-20">
+      <section id="about" className="max-w-4xl mx-auto px-6 pt-32 pb-20">
         <div className="flex items-start justify-between gap-6">
           <div className="flex-1 min-w-0">
             <div className="mb-2">
@@ -318,7 +318,7 @@ export default function Portfolio() {
       </section>
 
       {/* About / Summary */}
-      <section className="max-w-3xl mx-auto px-6 py-12 border-t border-border">
+      <section className="max-w-4xl mx-auto px-6 py-12 border-t border-border">
         <SectionLabel>About</SectionLabel>
         <p className="text-sm text-muted-foreground leading-relaxed">
           {summary}
@@ -326,7 +326,7 @@ export default function Portfolio() {
       </section>
 
       {/* Key Achievements */}
-      <section className="max-w-3xl mx-auto px-6 py-12 border-t border-border">
+      <section className="max-w-4xl mx-auto px-6 py-12 border-t border-border">
         <SectionLabel>Key Achievements</SectionLabel>
         <div className="space-y-4">
           {achievements.map((a, i) => (
@@ -338,7 +338,7 @@ export default function Portfolio() {
       {/* Experience */}
       <section
         id="experience"
-        className="max-w-3xl mx-auto px-6 py-12 border-t border-border"
+        className="max-w-4xl mx-auto px-6 py-12 border-t border-border"
       >
         <SectionLabel>Experience</SectionLabel>
         <div>
@@ -351,7 +351,7 @@ export default function Portfolio() {
       {/* Skills */}
       <section
         id="skills"
-        className="max-w-3xl mx-auto px-6 py-12 border-t border-border"
+        className="max-w-4xl mx-auto px-6 py-12 border-t border-border"
       >
         <SectionLabel>Skills & Expertise</SectionLabel>
         <div className="space-y-8">
@@ -425,7 +425,7 @@ export default function Portfolio() {
       </section>
 
       {/* Education */}
-      <section className="max-w-3xl mx-auto px-6 py-12 border-t border-border">
+      <section className="max-w-4xl mx-auto px-6 py-12 border-t border-border">
         <SectionLabel>Education</SectionLabel>
         {education.map((edu, i) => (
           <div key={i}>
@@ -440,7 +440,7 @@ export default function Portfolio() {
       {/* Contact */}
       <section
         id="contact"
-        className="max-w-3xl mx-auto px-6 py-12 border-t border-border"
+        className="max-w-4xl mx-auto px-6 py-12 border-t border-border"
       >
         <SectionLabel>Contact</SectionLabel>
         <div className="space-y-3">
@@ -516,7 +516,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="max-w-3xl mx-auto px-6 py-8 border-t border-border">
+      <footer className="max-w-4xl mx-auto px-6 py-8 border-t border-border">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <span>© {new Date().getFullYear()} Mohammed Riyazuddin</span>
           <span>Hyderabad, India · contact@mriyazuddin.com</span>
