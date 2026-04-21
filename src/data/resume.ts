@@ -43,7 +43,7 @@ export const resumeData = {
     "Reduced onboarding and training time by 50% by streamlining workflows, elevating quality standards, and optimizing resource allocation.",
     "Decreased team's average handle time from 17 to 13 mins by executing informal performance enhancement strategies, independent of formal KPIs and goal metrics.",
     "Updated several training documents, created/updated over hundred support documents, delivered multiple trainings to upskill the team resulting in 20% improvement in resolution rate.",
-    "Consistently achieved over 83% employee engagement score for 4 consecutive years.",
+    "Consistently achieved over 83% employee engagement score for 6 consecutive years.",
   ],
   experience: [
     {
@@ -52,7 +52,7 @@ export const resumeData = {
       role: "Freelance Web Developer",
       period: "Dec 2025 – Now",
       description:
-        "As a freelance WordPress/WooCommerce developer, I help businesses buildfast, secure, and conversion-ready websites and online stores. I specialize increating new sites, redesigning existing ones, optimizing performance, fixingcomplex technical issues, and ensuring long-term stability through ongoingmaintenance.",
+        "As a freelance WordPress/WooCommerce developer, I help businesses build fast, secure, and conversion-ready websites and online stores. I specialize in creating new sites, redesigning existing ones, optimizing performance, fixing complex technical issues, and ensuring long-term stability through ongoing maintenance.",
       highlights: [
         "https://qaafgifts.com",
         "https://qualitycoreconstructions.com/",
