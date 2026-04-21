@@ -1,1165 +1,1788 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Riyazuddin - Support Engineer & Technical Specialist</title>
-    <meta name="description" content="Experienced Customer Success and Technical Support Specialist with 5+ years in SaaS platforms, WordPress, and WooCommerce support.">
-    
+    <meta
+      name="description"
+      content="Experienced Customer Success and Technical Support Specialist with 5+ years in SaaS platforms, WordPress, and WooCommerce support."
+    />
+
     <!-- Tailwind CSS CDN for rapid prototyping and utility-first styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome for professional icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- Google Fonts - Inter for professional, clean typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script>
-        // Tailwind configuration for custom design system
-        tailwind.config = {
-            theme: {
-                extend: {
-                    // Custom color palette for professional branding
-                    colors: {
-                        primary: {
-                            50: '#eff6ff',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            900: '#1e3a8a'
-                        },
-                        secondary: {
-                            500: '#8b5cf6',
-                            600: '#7c3aed',
-                        }
-                    },
-                    // Custom font family
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif']
-                    },
-                    // Custom animation for smooth interactions
-                    animation: {
-                        'fade-in': 'fadeIn 0.6s ease-in-out',
-                        'slide-up': 'slideUp 0.6s ease-out',
-                        'bounce-gentle': 'bounceGentle 2s infinite'
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        slideUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        bounceGentle: {
-                            '0%, 100%': { transform: 'translateY(-5px)' },
-                            '50%': { transform: 'translateY(0)' }
-                        }
-                    }
-                }
+      // Tailwind configuration for custom design system
+      tailwind.config = {
+        theme: {
+          extend: {
+            // Custom color palette for professional branding
+            colors: {
+              primary: {
+                50: "#eff6ff",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                900: "#1e3a8a",
+              },
+              secondary: {
+                500: "#8b5cf6",
+                600: "#7c3aed",
+              },
             },
-            // Enable dark mode with class strategy
-            darkMode: 'class'
-        };
+            // Custom font family
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            // Custom animation for smooth interactions
+            animation: {
+              "fade-in": "fadeIn 0.6s ease-in-out",
+              "slide-up": "slideUp 0.6s ease-out",
+              "bounce-gentle": "bounceGentle 2s infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              slideUp: {
+                "0%": { opacity: "0", transform: "translateY(30px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              bounceGentle: {
+                "0%, 100%": { transform: "translateY(-5px)" },
+                "50%": { transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+        // Enable dark mode with class strategy
+        darkMode: "class",
+      };
     </script>
-</head>
+  </head>
 
-<body class="font-inter bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-
+  <body
+    class="font-inter bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300"
+  >
     <!-- @COMPONENT: NavigationHeader [fixed, responsive, theme toggle] -->
     <!-- Fixed navigation header with theme toggle and smooth scroll links -->
-    <nav class="fixed top-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-colors duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo/Name section -->
-                <div class="flex items-center">
-                    <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">
-                        Mohammed Riyazuddin
-                    </h1>
-                </div>
+    <nav
+      class="fixed top-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-colors duration-300"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo/Name section -->
+          <div class="flex items-center">
+            <h1
+              class="text-xl font-bold text-primary-600 dark:text-primary-400"
+            >
+              Mohammed Riyazuddin
+            </h1>
+          </div>
 
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">About</a>
-                    <a href="#experience" class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Experience</a>
-                    <a href="#skills" class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Skills</a>
-                    <a href="#achievements" class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Achievements</a>
-                    <a href="#contact" class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Contact</a>
-                    
-                    <!-- Theme Toggle Button -->
-                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle theme">
-                        <i class="fas fa-moon dark:hidden text-gray-600"></i>
-                        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
-                    </button>
-                </div>
+          <!-- Desktop Navigation Links -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#about"
+              class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >Experience</a
+            >
+            <a
+              href="#skills"
+              class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >Skills</a
+            >
+            <a
+              href="#achievements"
+              class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >Achievements</a
+            >
+            <a
+              href="#contact"
+              class="nav-link hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >Contact</a
+            >
 
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center space-x-4">
-                    <!-- Mobile Theme Toggle -->
-                    <button id="mobile-theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle theme">
-                        <i class="fas fa-moon dark:hidden text-gray-600 text-sm"></i>
-                        <i class="fas fa-sun hidden dark:block text-yellow-400 text-sm"></i>
-                    </button>
-                    
-                    <!-- Hamburger Menu -->
-                    <button id="mobile-menu-button" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200" aria-label="Open menu">
-                        <i class="fas fa-bars text-gray-600 dark:text-gray-400"></i>
-                    </button>
-                </div>
-            </div>
+            <!-- Theme Toggle Button -->
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              aria-label="Toggle theme"
+            >
+              <i class="fas fa-moon dark:hidden text-gray-600"></i>
+              <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+            </button>
+          </div>
 
-            <!-- Mobile Navigation Menu -->
-            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200 dark:border-gray-700">
-                <div class="flex flex-col space-y-3">
-                    <a href="#about" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">About</a>
-                    <a href="#experience" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">Experience</a>
-                    <a href="#skills" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">Skills</a>
-                    <a href="#achievements" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">Achievements</a>
-                    <a href="#contact" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">Contact</a>
-                </div>
-            </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center space-x-4">
+            <!-- Mobile Theme Toggle -->
+            <button
+              id="mobile-theme-toggle"
+              class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              aria-label="Toggle theme"
+            >
+              <i class="fas fa-moon dark:hidden text-gray-600 text-base"></i>
+              <i
+                class="fas fa-sun hidden dark:block text-yellow-400 text-base"
+              ></i>
+            </button>
+
+            <!-- Hamburger Menu -->
+            <button
+              id="mobile-menu-button"
+              class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              aria-label="Open menu"
+            >
+              <i class="fas fa-bars text-gray-600 dark:text-gray-400"></i>
+            </button>
+          </div>
         </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden py-4 border-t border-gray-200 dark:border-gray-700"
+        >
+          <div class="flex flex-col space-y-3">
+            <a
+              href="#about"
+              class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >Experience</a
+            >
+            <a
+              href="#skills"
+              class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >Skills</a
+            >
+            <a
+              href="#achievements"
+              class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >Achievements</a
+            >
+            <a
+              href="#contact"
+              class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- @END_COMPONENT: NavigationHeader -->
 
     <!-- Main Content Container -->
     <main class="pt-16">
+      <!-- @COMPONENT: HeroSection [professional intro, contact info, CTA] -->
+      <!-- Hero section with professional introduction and key contact information -->
+      <section
+        id="hero"
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div class="text-center animate-fade-in">
+            <!-- Profile Image Placeholder -->
+            <div class="mb-8 flex justify-center">
+              <div
+                class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-400 to-secondary-500 flex items-center justify-center shadow-lg"
+              >
+                <i class="fas fa-user text-4xl text-white"></i>
+              </div>
+            </div>
 
-        <!-- @COMPONENT: HeroSection [professional intro, contact info, CTA] -->
-        <!-- Hero section with professional introduction and key contact information -->
-        <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                <div class="text-center animate-fade-in">
-                    <!-- Profile Image Placeholder -->
-                    <div class="mb-8 flex justify-center">
-                        <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-400 to-secondary-500 flex items-center justify-center shadow-lg">
-                            <i class="fas fa-user text-4xl text-white"></i>
-                        </div>
-                    </div>
+            <!-- Main Heading -->
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              Mohammed
+              <span class="text-primary-600 dark:text-primary-400"
+                >Riyazuddin</span
+              >
+            </h1>
 
-                    <!-- Main Heading -->
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-                        Mohammed <span class="text-primary-600 dark:text-primary-400">Riyazuddin</span>
-                    </h1>
+            <!-- Professional Title -->
+            <h2
+              class="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-600 dark:text-gray-300 mb-8"
+            >
+              Support Engineer & Technical Specialist
+            </h2>
 
-                    <!-- Professional Title -->
-                    <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-600 dark:text-gray-300 mb-8">
-                        Support Engineer & Technical Specialist
-                    </h2>
+            <!-- Professional Summary -->
+            <p
+              class="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed"
+            >
+              Experienced Customer Success and Technical Support Specialist with
+              over 5 years of success managing customer relationships, resolving
+              complex platform issues, and driving product adoption in SaaS and
+              digital platforms.
+            </p>
 
-                    <!-- Professional Summary -->
-                    <p class="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-                        Experienced Customer Success and Technical Support Specialist with over 5 years of success managing customer relationships, resolving complex platform issues, and driving product adoption in SaaS and digital platforms.
+            <!-- Contact Information -->
+            <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
+              <a
+                href="mailto:contact@riyaz.blog"
+                class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>contact@riyaz.blog</span>
+              </a>
+              <a
+                href="tel:+918639227538"
+                class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+              >
+                <i class="fas fa-phone"></i>
+                <span>+91 863-922-7538</span>
+              </a>
+              <div
+                class="flex items-center gap-2 text-gray-600 dark:text-gray-300"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hyderabad, India</span>
+              </div>
+            </div>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact"
+                class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+              >
+                Get In Touch
+              </a>
+              <button
+                data-implementation="Implement resume download functionality"
+                class="bg-white dark:bg-gray-800 border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+              >
+                <i class="fas fa-download mr-2"></i>
+                Download Resume
+              </button>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="mt-16">
+              <div class="animate-bounce-gentle">
+                <i
+                  class="fas fa-chevron-down text-primary-600 dark:text-primary-400 text-2xl"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- @END_COMPONENT: HeroSection -->
+
+      <!-- @COMPONENT: AboutSection [detailed background, expertise areas] -->
+      <!-- About section showcasing professional background and areas of expertise -->
+      <section
+        id="about"
+        class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2
+              class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              About Me
+            </h2>
+            <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Professional Summary -->
+            <div class="animate-fade-in">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                Professional Background
+              </h3>
+              <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                With over 5 years of experience in customer success and
+                technical support, I specialize in managing customer
+                relationships, resolving complex platform issues, and driving
+                product adoption across SaaS and digital platforms.
+              </p>
+              <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                My expertise spans cross-functional collaboration, customer
+                communication, and data analysis, with a proven track record of
+                simplifying technical concepts and contributing to support
+                process improvements.
+              </p>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                I'm passionate about bridging the gap between technical
+                solutions and user needs, ensuring seamless experiences for
+                customers while driving business growth.
+              </p>
+            </div>
+
+            <!-- Areas of Expertise Grid -->
+            <div class="animate-fade-in">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                Areas of Expertise
+              </h3>
+              <div class="grid grid-cols-2 gap-4">
+                <!-- @MAP: expertiseAreas.map(area => ( -->
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Product Support</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Technical Support</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Project Management</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Troubleshooting</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Process Improvement</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Customer Service</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Documentation</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <i
+                    class="fas fa-check-circle text-primary-600 dark:text-primary-400"
+                  ></i>
+                  <span class="text-base font-medium" data-mock="true"
+                    >Training</span
+                  >
+                </div>
+                <!-- @END_MAP )) -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- @END_COMPONENT: AboutSection -->
+
+      <!-- @COMPONENT: ExperienceSection [timeline, company details, achievements] -->
+      <!-- Professional experience timeline with detailed role descriptions -->
+      <section
+        id="experience"
+        class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2
+              class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              Professional Experience
+            </h2>
+            <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          </div>
+
+          <!-- Experience Timeline -->
+          <div class="relative">
+            <!-- Timeline Line -->
+            <div
+              class="absolute left-6 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-primary-200 dark:bg-primary-800"
+            ></div>
+
+            <!-- @MAP: experiences.map((experience, index) => ( -->
+            <!-- Experience Item 1: Automattic -->
+            <div class="relative flex items-center mb-12 animate-fade-in">
+              <!-- Timeline Dot -->
+              <div
+                class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"
+              ></div>
+
+              <!-- Content Card -->
+              <div
+                class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right md:odd:ml-auto md:odd:pl-8 md:odd:pr-0 md:odd:text-left"
+              >
+                <div
+                  class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+                >
+                  <!-- Company Info -->
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                      Happiness Engineer
+                    </h3>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-semibold"
+                    >
+                      Automattic
                     </p>
-
-                    <!-- Contact Information -->
-                    <div class="flex flex-wrap justify-center items-center gap-6 mb-12">
-                        <a href="mailto:contact@riyaz.blog" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
-                            <i class="fas fa-envelope"></i>
-                            <span>contact@riyaz.blog</span>
-                        </a>
-                        <a href="tel:+918639227538" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 863-922-7538</span>
-                        </a>
-                        <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Hyderabad, India</span>
-                        </div>
-                    </div>
-
-                    <!-- Call-to-Action Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#contact" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl">
-                            Get In Touch
-                        </a>
-                        <button data-implementation="Implement resume download functionality" class="bg-white dark:bg-gray-800 border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 px-8 py-3 rounded-lg font-medium transition-colors duration-200">
-                            <i class="fas fa-download mr-2"></i>
-                            Download Resume
-                        </button>
-                    </div>
-
-                    <!-- Scroll Down Indicator -->
-                    <div class="mt-16">
-                        <div class="animate-bounce-gentle">
-                            <i class="fas fa-chevron-down text-primary-600 dark:text-primary-400 text-2xl"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- @END_COMPONENT: HeroSection -->
-
-        <!-- @COMPONENT: AboutSection [detailed background, expertise areas] -->
-        <!-- About section showcasing professional background and areas of expertise -->
-        <section id="about" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 animate-slide-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">About Me</h2>
-                    <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
-                </div>
-
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <!-- Professional Summary -->
-                    <div class="animate-fade-in">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Professional Background</h3>
-                        <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                            With over 5 years of experience in customer success and technical support, I specialize in managing customer relationships, resolving complex platform issues, and driving product adoption across SaaS and digital platforms.
-                        </p>
-                        <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                            My expertise spans cross-functional collaboration, customer communication, and data analysis, with a proven track record of simplifying technical concepts and contributing to support process improvements.
-                        </p>
-                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                            I'm passionate about bridging the gap between technical solutions and user needs, ensuring seamless experiences for customers while driving business growth.
-                        </p>
-                    </div>
-
-                    <!-- Areas of Expertise Grid -->
-                    <div class="animate-fade-in">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Areas of Expertise</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <!-- @MAP: expertiseAreas.map(area => ( -->
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Product Support</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Technical Support</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Project Management</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Troubleshooting</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Process Improvement</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Customer Service</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Documentation</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-check-circle text-primary-600 dark:text-primary-400"></i>
-                                <span class="text-sm font-medium" data-mock="true">Training</span>
-                            </div>
-                            <!-- @END_MAP )) -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- @END_COMPONENT: AboutSection -->
-
-        <!-- @COMPONENT: ExperienceSection [timeline, company details, achievements] -->
-        <!-- Professional experience timeline with detailed role descriptions -->
-        <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 animate-slide-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">Professional Experience</h2>
-                    <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
-                </div>
-
-                <!-- Experience Timeline -->
-                <div class="relative">
-                    <!-- Timeline Line -->
-                    <div class="absolute left-6 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-primary-200 dark:bg-primary-800"></div>
-
-                    <!-- @MAP: experiences.map((experience, index) => ( -->
-                    <!-- Experience Item 1: Automattic -->
-                    <div class="relative flex items-center mb-12 animate-fade-in">
-                        <!-- Timeline Dot -->
-                        <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
-                        
-                        <!-- Content Card -->
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right md:odd:ml-auto md:odd:pl-8 md:odd:pr-0 md:odd:text-left">
-                            <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                                <!-- Company Info -->
-                                <div class="mb-4">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Happiness Engineer</h3>
-                                    <p class="text-primary-600 dark:text-primary-400 font-semibold">Automattic</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">June 2019 – April 2025 • Remote</p>
-                                </div>
-
-                                <!-- Role Description -->
-                                <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                                    Resolved customer inquiries via email (Zendesk) and live chat supporting WordPress.com and WooCommerce platforms, enhancing user satisfaction and product usability. Troubleshot and optimized WooCommerce plugins including payment gateways and advanced modules.
-                                </p>
-
-                                <!-- Key Accomplishments -->
-                                <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-star text-yellow-500 mt-1 text-sm"></i>
-                                        <span class="text-sm">Resolved 500+ tickets/month while maintaining 90%+ CSAT scores</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-star text-yellow-500 mt-1 text-sm"></i>
-                                        <span class="text-sm">Improved user support experience by revamping over 100 documentation assets</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-star text-yellow-500 mt-1 text-sm"></i>
-                                        <span class="text-sm">Developed APAC workforce through 6-month talent acquisition initiative</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Experience Item 2: ESW Capital -->
-                    <div class="relative flex items-center mb-12 animate-fade-in">
-                        <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
-                        
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
-                            <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                                <div class="mb-4">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Customer Support Manager</h3>
-                                    <p class="text-primary-600 dark:text-primary-400 font-semibold">ESW Capital</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">April 2018 – August 2018 • Remote</p>
-                                </div>
-                                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    Transitioned a support process from a newly acquired company to ESW Support model, ensuring seamless integration and maintained service quality during the transition period.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Experience Item 3: Teradata -->
-                    <div class="relative flex items-center mb-12 animate-fade-in">
-                        <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
-                        
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
-                            <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                                <div class="mb-4">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Technical Support Associate VI</h3>
-                                    <p class="text-primary-600 dark:text-primary-400 font-semibold">Teradata India Pvt. Ltd</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">September 2016 – March 2018 • Hyderabad</p>
-                                </div>
-                                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    Led a small group of support agents, providing technical guidance and ensuring efficient resolution of complex data warehouse and analytics platform issues.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Experience Item 4: Deloitte -->
-                    <div class="relative flex items-center animate-fade-in">
-                        <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
-                        
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
-                            <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                                <div class="mb-4">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Various Support Roles</h3>
-                                    <p class="text-primary-600 dark:text-primary-400 font-semibold">Deloitte</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">August 2005 – September 2016 • Hyderabad</p>
-                                </div>
-                                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    Started as a support agent on the front lines providing IT support in a call center environment. Progressed to lead a team, demonstrating growth in leadership and technical capabilities over 11 years.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- @END_MAP )) -->
-                </div>
-            </div>
-        </section>
-        <!-- @END_COMPONENT: ExperienceSection -->
-
-        <!-- @COMPONENT: SkillsSection [technical stack, tools, proficiencies] -->
-        <!-- Skills and technical stack showcase with visual indicators -->
-        <section id="skills" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 animate-slide-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">Skills & Technical Stack</h2>
-                    <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
-                </div>
-
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <!-- Technical Stack -->
-                    <div class="animate-fade-in">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">Technical Expertise</h3>
-                        <div class="space-y-6">
-                            <!-- @MAP: technicalSkills.map(skill => ( -->
-                            <div class="skill-item">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="font-medium text-gray-900 dark:text-white" data-mock="true">WordPress & WooCommerce</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Expert</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary-600 h-2 rounded-full" style="width: 95%" data-implementation="Calculate skill level percentage"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="font-medium text-gray-900 dark:text-white" data-mock="true">HTML, CSS & JavaScript</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Advanced</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary-600 h-2 rounded-full" style="width: 85%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="font-medium text-gray-900 dark:text-white" data-mock="true">APIs & Integration</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Advanced</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary-600 h-2 rounded-full" style="width: 80%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="font-medium text-gray-900 dark:text-white" data-mock="true">Git & Version Control</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Intermediate</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary-600 h-2 rounded-full" style="width: 70%"></div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="font-medium text-gray-900 dark:text-white" data-mock="true">DNS & Hosting</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400" data-mock="true">Advanced</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary-600 h-2 rounded-full" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <!-- @END_MAP )) -->
-                        </div>
-                    </div>
-
-                    <!-- Tools & Platforms -->
-                    <div class="animate-fade-in">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">Tools & Platforms</h3>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                            <!-- @MAP: tools.map(tool => ( -->
-                            <div class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center">
-                                <div class="mb-3">
-                                    <i class="fab fa-wordpress text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"></i>
-                                </div>
-                                <span class="text-sm font-medium text-gray-900 dark:text-white" data-mock="true">WordPress</span>
-                            </div>
-
-                            <div class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center">
-                                <div class="mb-3">
-                                    <i class="fas fa-life-ring text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"></i>
-                                </div>
-                                <span class="text-sm font-medium text-gray-900 dark:text-white" data-mock="true">Zendesk</span>
-                            </div>
-
-                            <div class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center">
-                                <div class="mb-3">
-                                    <i class="fab fa-github text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"></i>
-                                </div>
-                                <span class="text-sm font-medium text-gray-900 dark:text-white" data-mock="true">GitHub</span>
-                            </div>
-
-                            <div class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center">
-                                <div class="mb-3">
-                                    <i class="fas fa-code text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"></i>
-                                </div>
-                                <span class="text-sm font-medium text-gray-900 dark:text-white" data-mock="true">DevTools</span>
-                            </div>
-
-                            <div class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center">
-                                <div class="mb-3">
-                                    <i class="fas fa-server text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"></i>
-                                </div>
-                                <span class="text-sm font-medium text-gray-900 dark:text-white" data-mock="true">DNS</span>
-                            </div>
-
-                            <div class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center">
-                                <div class="mb-3">
-                                    <i class="fas fa-chart-line text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"></i>
-                                </div>
-                                <span class="text-sm font-medium text-gray-900 dark:text-white" data-mock="true">Analytics</span>
-                            </div>
-                            <!-- @END_MAP )) -->
-                        </div>
-
-                        <!-- Language Proficiency -->
-                        <div class="mt-12">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Languages</h4>
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center">
-                                    <span class="font-medium text-gray-900 dark:text-white">English</span>
-                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">Proficient</span>
-                                </div>
-                                <div class="flex justify-between items-center">
-                                    <span class="font-medium text-gray-900 dark:text-white">Hindi & Urdu</span>
-                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">Native</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- @END_COMPONENT: SkillsSection -->
-
-        <!-- @COMPONENT: AchievementsSection [key metrics, accomplishments] -->
-        <!-- Key achievements and accomplishments with impact metrics -->
-        <section id="achievements" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 animate-slide-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">Key Achievements</h2>
-                    <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
-                </div>
-
-                <!-- Achievement Metrics -->
-                <div class="grid md:grid-cols-3 gap-8 mb-16">
-                    <!-- @MAP: achievements.map(achievement => ( -->
-                    <div class="text-center animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                            <div class="mb-4">
-                                <i class="fas fa-ticket-alt text-4xl text-primary-600 dark:text-primary-400"></i>
-                            </div>
-                            <div class="text-3xl font-bold text-gray-900 dark:text-white mb-2" data-mock="true">500+</div>
-                            <div class="text-gray-600 dark:text-gray-300 font-medium">Tickets Resolved Monthly</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400 mt-2">With 90%+ CSAT scores consistently</div>
-                        </div>
-                    </div>
-
-                    <div class="text-center animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                            <div class="mb-4">
-                                <i class="fas fa-file-alt text-4xl text-primary-600 dark:text-primary-400"></i>
-                            </div>
-                            <div class="text-3xl font-bold text-gray-900 dark:text-white mb-2" data-mock="true">100+</div>
-                            <div class="text-gray-600 dark:text-gray-300 font-medium">Documentation Assets</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400 mt-2">Created and updated for better UX</div>
-                        </div>
-                    </div>
-
-                    <div class="text-center animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-                            <div class="mb-4">
-                                <i class="fas fa-users text-4xl text-primary-600 dark:text-primary-400"></i>
-                            </div>
-                            <div class="text-3xl font-bold text-gray-900 dark:text-white mb-2" data-mock="true">6 Months</div>
-                            <div class="text-gray-600 dark:text-gray-300 font-medium">Talent Acquisition</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400 mt-2">APAC workforce development initiative</div>
-                        </div>
-                    </div>
-                    <!-- @END_MAP )) -->
-                </div>
-
-                <!-- Detailed Achievements -->
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
-                            <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-award text-primary-600 dark:text-primary-400 text-xl"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Customer Satisfaction Excellence</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                                        Consistently maintained 90%+ CSAT scores while handling 500+ tickets monthly, demonstrating exceptional problem-solving skills and customer relationship management.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
-                            <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-book text-secondary-600 dark:text-secondary-400 text-xl"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Documentation Leadership</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                                        Led the Documentation Guild initiative, creating and revamping over 100 customer-facing documentation assets to improve user support experience and self-service capabilities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
-                            <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-chalkboard-teacher text-green-600 dark:text-green-400 text-xl"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Training & Development</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                                        Delivered multiple training sessions to team members, resulting in improved resolution times and enhanced team capabilities across the support organization.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="animate-fade-in">
-                        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
-                            <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-globe-asia text-orange-600 dark:text-orange-400 text-xl"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Regional Growth Initiative</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                                        Successfully developed APAC workforce through a comprehensive 6-month talent acquisition initiative, supporting regional growth objectives and team expansion.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- @END_COMPONENT: AchievementsSection -->
-
-        <!-- @COMPONENT: ContactSection [contact form, social links, location] -->
-        <!-- Contact section with form and social media links -->
-        <section id="contact" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 animate-slide-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h2>
-                    <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full mb-6"></div>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-                        Ready to discuss opportunities or have questions about my experience? I'd love to hear from you.
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                      June 2019 – April 2025 • Remote
                     </p>
+                  </div>
+
+                  <!-- Role Description -->
+                  <p
+                    class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed"
+                  >
+                    Resolved customer inquiries via email (Zendesk) and live
+                    chat supporting WordPress.com and WooCommerce platforms,
+                    enhancing user satisfaction and product usability.
+                    Troubleshot and optimized WooCommerce plugins including
+                    payment gateways and advanced modules.
+                  </p>
+
+                  <!-- Key Accomplishments -->
+                  <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                    <li class="flex items-start gap-2">
+                      <i class="fas fa-star text-yellow-500 mt-1 text-base"></i>
+                      <span class="text-base"
+                        >Resolved 500+ tickets/month while maintaining 90%+ CSAT
+                        scores</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i class="fas fa-star text-yellow-500 mt-1 text-base"></i>
+                      <span class="text-base"
+                        >Improved user support experience by revamping over 100
+                        documentation assets</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <i class="fas fa-star text-yellow-500 mt-1 text-base"></i>
+                      <span class="text-base"
+                        >Developed APAC workforce through 6-month talent
+                        acquisition initiative</span
+                      >
+                    </li>
+                  </ul>
                 </div>
-
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <!-- Contact Information -->
-                    <div class="animate-fade-in">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">Contact Information</h3>
-                        
-                        <div class="space-y-6">
-                            <!-- Email -->
-                            <div class="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-envelope text-primary-600 dark:text-primary-400"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="font-medium text-gray-900 dark:text-white">Email</p>
-                                    <a href="mailto:contact@riyaz.blog" class="text-primary-600 dark:text-primary-400 hover:underline">contact@riyaz.blog</a>
-                                </div>
-                            </div>
-
-                            <!-- Phone -->
-                            <div class="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-phone text-primary-600 dark:text-primary-400"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="font-medium text-gray-900 dark:text-white">Phone</p>
-                                    <a href="tel:+918639227538" class="text-primary-600 dark:text-primary-400 hover:underline">+91 863-922-7538</a>
-                                </div>
-                            </div>
-
-                            <!-- Location -->
-                            <div class="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                                <div class="flex-shrink-0">
-                                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-map-marker-alt text-primary-600 dark:text-primary-400"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="font-medium text-gray-900 dark:text-white">Location</p>
-                                    <p class="text-gray-600 dark:text-gray-300">Hyderabad, India</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="mt-8">
-                            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Connect With Me</h4>
-                            <div class="flex gap-4">
-                                <a href="#" data-implementation="Add real LinkedIn URL" class="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="mailto:contact@riyaz.blog" class="w-12 h-12 bg-gray-600 hover:bg-gray-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200" aria-label="Email">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="#" data-implementation="Add blog URL if available" class="w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200" aria-label="Website">
-                                    <i class="fas fa-globe"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="animate-fade-in">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">Send a Message</h3>
-                        
-                        <form class="space-y-6" data-implementation="Implement form submission handling">
-                            <!-- @STATE: formData:object = {name: '', email: '', subject: '', message: ''} -->
-                            
-                            <!-- Name Field -->
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                    Full Name *
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200"
-                                    placeholder="Your full name"
-                                    data-bind="formData.name"
-                                >
-                            </div>
-
-                            <!-- Email Field -->
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                    Email Address *
-                                </label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200"
-                                    placeholder="your.email@example.com"
-                                    data-bind="formData.email"
-                                >
-                            </div>
-
-                            <!-- Subject Field -->
-                            <div>
-                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                    Subject *
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="subject" 
-                                    name="subject" 
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200"
-                                    placeholder="What would you like to discuss?"
-                                    data-bind="formData.subject"
-                                >
-                            </div>
-
-                            <!-- Message Field -->
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                    Message *
-                                </label>
-                                <textarea 
-                                    id="message" 
-                                    name="message" 
-                                    rows="5" 
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200 resize-vertical"
-                                    placeholder="Tell me about the opportunity or ask any questions..."
-                                    data-bind="formData.message"
-                                ></textarea>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <button 
-                                type="submit" 
-                                class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-                                data-event="click:handleFormSubmit"
-                                data-implementation="Validate form and send email"
-                            >
-                                <i class="fas fa-paper-plane mr-2"></i>
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- @END_COMPONENT: ContactSection -->
 
+            <!-- Experience Item 2: ESW Capital -->
+            <div class="relative flex items-center mb-12 animate-fade-in">
+              <div
+                class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"
+              ></div>
+
+              <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                <div
+                  class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+                >
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                      Customer Support Manager
+                    </h3>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-semibold"
+                    >
+                      ESW Capital
+                    </p>
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                      April 2018 – August 2018 • Remote
+                    </p>
+                  </div>
+                  <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Transitioned a support process from a newly acquired company
+                    to ESW Support model, ensuring seamless integration and
+                    maintained service quality during the transition period.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Item 3: Teradata -->
+            <div class="relative flex items-center mb-12 animate-fade-in">
+              <div
+                class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"
+              ></div>
+
+              <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
+                <div
+                  class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+                >
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                      Technical Support Associate VI
+                    </h3>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-semibold"
+                    >
+                      Teradata India Pvt. Ltd
+                    </p>
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                      September 2016 – March 2018 • Hyderabad
+                    </p>
+                  </div>
+                  <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Led a small group of support agents, providing technical
+                    guidance and ensuring efficient resolution of complex data
+                    warehouse and analytics platform issues.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Item 4: Deloitte -->
+            <div class="relative flex items-center animate-fade-in">
+              <div
+                class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-800 z-10"
+              ></div>
+
+              <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
+                <div
+                  class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+                >
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                      Various Support Roles
+                    </h3>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-semibold"
+                    >
+                      Deloitte
+                    </p>
+                    <p class="text-base text-gray-500 dark:text-gray-400">
+                      August 2005 – September 2016 • Hyderabad
+                    </p>
+                  </div>
+                  <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Started as a support agent on the front lines providing IT
+                    support in a call center environment. Progressed to lead a
+                    team, demonstrating growth in leadership and technical
+                    capabilities over 11 years.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- @END_MAP )) -->
+          </div>
+        </div>
+      </section>
+      <!-- @END_COMPONENT: ExperienceSection -->
+
+      <!-- @COMPONENT: SkillsSection [technical stack, tools, proficiencies] -->
+      <!-- Skills and technical stack showcase with visual indicators -->
+      <section
+        id="skills"
+        class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2
+              class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              Skills & Technical Stack
+            </h2>
+            <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Technical Stack -->
+            <div class="animate-fade-in">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+                Technical Expertise
+              </h3>
+              <div class="space-y-6">
+                <!-- @MAP: technicalSkills.map(skill => ( -->
+                <div class="skill-item">
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="font-medium text-gray-900 dark:text-white"
+                      data-mock="true"
+                      >WordPress & WooCommerce</span
+                    >
+                    <span
+                      class="text-base text-gray-500 dark:text-gray-400"
+                      data-mock="true"
+                      >Expert</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-primary-600 h-2 rounded-full"
+                      style="width: 95%"
+                      data-implementation="Calculate skill level percentage"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="font-medium text-gray-900 dark:text-white"
+                      data-mock="true"
+                      >HTML, CSS & JavaScript</span
+                    >
+                    <span
+                      class="text-base text-gray-500 dark:text-gray-400"
+                      data-mock="true"
+                      >Advanced</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-primary-600 h-2 rounded-full"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="font-medium text-gray-900 dark:text-white"
+                      data-mock="true"
+                      >APIs & Integration</span
+                    >
+                    <span
+                      class="text-base text-gray-500 dark:text-gray-400"
+                      data-mock="true"
+                      >Advanced</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-primary-600 h-2 rounded-full"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="font-medium text-gray-900 dark:text-white"
+                      data-mock="true"
+                      >Git & Version Control</span
+                    >
+                    <span
+                      class="text-base text-gray-500 dark:text-gray-400"
+                      data-mock="true"
+                      >Intermediate</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-primary-600 h-2 rounded-full"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="font-medium text-gray-900 dark:text-white"
+                      data-mock="true"
+                      >DNS & Hosting</span
+                    >
+                    <span
+                      class="text-base text-gray-500 dark:text-gray-400"
+                      data-mock="true"
+                      >Advanced</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-primary-600 h-2 rounded-full"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                </div>
+                <!-- @END_MAP )) -->
+              </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="animate-fade-in">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+                Tools & Platforms
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <!-- @MAP: tools.map(tool => ( -->
+                <div
+                  class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center"
+                >
+                  <div class="mb-3">
+                    <i
+                      class="fab fa-wordpress text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <span
+                    class="text-base font-medium text-gray-900 dark:text-white"
+                    data-mock="true"
+                    >WordPress</span
+                  >
+                </div>
+
+                <div
+                  class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center"
+                >
+                  <div class="mb-3">
+                    <i
+                      class="fas fa-life-ring text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <span
+                    class="text-base font-medium text-gray-900 dark:text-white"
+                    data-mock="true"
+                    >Zendesk</span
+                  >
+                </div>
+
+                <div
+                  class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center"
+                >
+                  <div class="mb-3">
+                    <i
+                      class="fab fa-github text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <span
+                    class="text-base font-medium text-gray-900 dark:text-white"
+                    data-mock="true"
+                    >GitHub</span
+                  >
+                </div>
+
+                <div
+                  class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center"
+                >
+                  <div class="mb-3">
+                    <i
+                      class="fas fa-code text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <span
+                    class="text-base font-medium text-gray-900 dark:text-white"
+                    data-mock="true"
+                    >DevTools</span
+                  >
+                </div>
+
+                <div
+                  class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center"
+                >
+                  <div class="mb-3">
+                    <i
+                      class="fas fa-server text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <span
+                    class="text-base font-medium text-gray-900 dark:text-white"
+                    data-mock="true"
+                    >DNS</span
+                  >
+                </div>
+
+                <div
+                  class="group p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-all duration-300 hover:shadow-md text-center"
+                >
+                  <div class="mb-3">
+                    <i
+                      class="fas fa-chart-line text-3xl text-gray-600 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300"
+                    ></i>
+                  </div>
+                  <span
+                    class="text-base font-medium text-gray-900 dark:text-white"
+                    data-mock="true"
+                    >Analytics</span
+                  >
+                </div>
+                <!-- @END_MAP )) -->
+              </div>
+
+              <!-- Language Proficiency -->
+              <div class="mt-12">
+                <h4
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-6"
+                >
+                  Languages
+                </h4>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="font-medium text-gray-900 dark:text-white"
+                      >English</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-base font-medium"
+                      >Proficient</span
+                    >
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-medium text-gray-900 dark:text-white"
+                      >Hindi & Urdu</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-base font-medium"
+                      >Native</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- @END_COMPONENT: SkillsSection -->
+
+      <!-- @COMPONENT: AchievementsSection [key metrics, accomplishments] -->
+      <!-- Key achievements and accomplishments with impact metrics -->
+      <section
+        id="achievements"
+        class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2
+              class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              Key Achievements
+            </h2>
+            <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          </div>
+
+          <!-- Achievement Metrics -->
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- @MAP: achievements.map(achievement => ( -->
+            <div class="text-center animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+              >
+                <div class="mb-4">
+                  <i
+                    class="fas fa-ticket-alt text-4xl text-primary-600 dark:text-primary-400"
+                  ></i>
+                </div>
+                <div
+                  class="text-3xl font-bold text-gray-900 dark:text-white mb-2"
+                  data-mock="true"
+                >
+                  500+
+                </div>
+                <div class="text-gray-600 dark:text-gray-300 font-medium">
+                  Tickets Resolved Monthly
+                </div>
+                <div class="text-base text-gray-500 dark:text-gray-400 mt-2">
+                  With 90%+ CSAT scores consistently
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+              >
+                <div class="mb-4">
+                  <i
+                    class="fas fa-file-alt text-4xl text-primary-600 dark:text-primary-400"
+                  ></i>
+                </div>
+                <div
+                  class="text-3xl font-bold text-gray-900 dark:text-white mb-2"
+                  data-mock="true"
+                >
+                  100+
+                </div>
+                <div class="text-gray-600 dark:text-gray-300 font-medium">
+                  Documentation Assets
+                </div>
+                <div class="text-base text-gray-500 dark:text-gray-400 mt-2">
+                  Created and updated for better UX
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+              >
+                <div class="mb-4">
+                  <i
+                    class="fas fa-users text-4xl text-primary-600 dark:text-primary-400"
+                  ></i>
+                </div>
+                <div
+                  class="text-3xl font-bold text-gray-900 dark:text-white mb-2"
+                  data-mock="true"
+                >
+                  6 Months
+                </div>
+                <div class="text-gray-600 dark:text-gray-300 font-medium">
+                  Talent Acquisition
+                </div>
+                <div class="text-base text-gray-500 dark:text-gray-400 mt-2">
+                  APAC workforce development initiative
+                </div>
+              </div>
+            </div>
+            <!-- @END_MAP )) -->
+          </div>
+
+          <!-- Detailed Achievements -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-award text-primary-600 dark:text-primary-400 text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-gray-900 dark:text-white mb-2"
+                    >
+                      Customer Satisfaction Excellence
+                    </h3>
+                    <p
+                      class="text-gray-700 dark:text-gray-300 text-base leading-relaxed"
+                    >
+                      Consistently maintained 90%+ CSAT scores while handling
+                      500+ tickets monthly, demonstrating exceptional
+                      problem-solving skills and customer relationship
+                      management.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-book text-secondary-600 dark:text-secondary-400 text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-gray-900 dark:text-white mb-2"
+                    >
+                      Documentation Leadership
+                    </h3>
+                    <p
+                      class="text-gray-700 dark:text-gray-300 text-base leading-relaxed"
+                    >
+                      Led the Documentation Guild initiative, creating and
+                      revamping over 100 customer-facing documentation assets to
+                      improve user support experience and self-service
+                      capabilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-chalkboard-teacher text-green-600 dark:text-green-400 text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-gray-900 dark:text-white mb-2"
+                    >
+                      Training & Development
+                    </h3>
+                    <p
+                      class="text-gray-700 dark:text-gray-300 text-base leading-relaxed"
+                    >
+                      Delivered multiple training sessions to team members,
+                      resulting in improved resolution times and enhanced team
+                      capabilities across the support organization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="animate-fade-in">
+              <div
+                class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-globe-asia text-orange-600 dark:text-orange-400 text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-gray-900 dark:text-white mb-2"
+                    >
+                      Regional Growth Initiative
+                    </h3>
+                    <p
+                      class="text-gray-700 dark:text-gray-300 text-base leading-relaxed"
+                    >
+                      Successfully developed APAC workforce through a
+                      comprehensive 6-month talent acquisition initiative,
+                      supporting regional growth objectives and team expansion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- @END_COMPONENT: AchievementsSection -->
+
+      <!-- @COMPONENT: ContactSection [contact form, social links, location] -->
+      <!-- Contact section with form and social media links -->
+      <section
+        id="contact"
+        class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2
+              class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              Get In Touch
+            </h2>
+            <div
+              class="w-24 h-1 bg-primary-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p
+              class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto"
+            >
+              Ready to discuss opportunities or have questions about my
+              experience? I'd love to hear from you.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="animate-fade-in">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+                Contact Information
+              </h3>
+
+              <div class="space-y-6">
+                <!-- Email -->
+                <div
+                  class="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-envelope text-primary-600 dark:text-primary-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">
+                      Email
+                    </p>
+                    <a
+                      href="mailto:contact@riyaz.blog"
+                      class="text-primary-600 dark:text-primary-400 hover:underline"
+                      >contact@riyaz.blog</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div
+                  class="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-phone text-primary-600 dark:text-primary-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">
+                      Phone
+                    </p>
+                    <a
+                      href="tel:+918639227538"
+                      class="text-primary-600 dark:text-primary-400 hover:underline"
+                      >+91 863-922-7538</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Location -->
+                <div
+                  class="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg"
+                >
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-map-marker-alt text-primary-600 dark:text-primary-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">
+                      Location
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300">
+                      Hyderabad, India
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="mt-8">
+                <h4
+                  class="text-lg font-bold text-gray-900 dark:text-white mb-4"
+                >
+                  Connect With Me
+                </h4>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    data-implementation="Add real LinkedIn URL"
+                    class="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="mailto:contact@riyaz.blog"
+                    class="w-12 h-12 bg-gray-600 hover:bg-gray-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200"
+                    aria-label="Email"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="#"
+                    data-implementation="Add blog URL if available"
+                    class="w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-lg flex items-center justify-center transition-colors duration-200"
+                    aria-label="Website"
+                  >
+                    <i class="fas fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="animate-fade-in">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+                Send a Message
+              </h3>
+
+              <form
+                class="space-y-6"
+                data-implementation="Implement form submission handling"
+              >
+                <!-- @STATE: formData:object = {name: '', email: '', subject: '', message: ''} -->
+
+                <!-- Name Field -->
+                <div>
+                  <label
+                    for="name"
+                    class="block text-base font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200"
+                    placeholder="Your full name"
+                    data-bind="formData.name"
+                  />
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                  <label
+                    for="email"
+                    class="block text-base font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200"
+                    placeholder="your.email@example.com"
+                    data-bind="formData.email"
+                  />
+                </div>
+
+                <!-- Subject Field -->
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-base font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Subject *
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200"
+                    placeholder="What would you like to discuss?"
+                    data-bind="formData.subject"
+                  />
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                  <label
+                    for="message"
+                    class="block text-base font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  >
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200 resize-vertical"
+                    placeholder="Tell me about the opportunity or ask any questions..."
+                    data-bind="formData.message"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+                  data-event="click:handleFormSubmit"
+                  data-implementation="Validate form and send email"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- @END_COMPONENT: ContactSection -->
     </main>
 
     <!-- @COMPONENT: Footer [copyright, additional links] -->
     <!-- Footer with copyright and additional information -->
-    <footer class="bg-gray-900 dark:bg-black text-white py-12 transition-colors duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <p class="text-gray-400 mb-4">
-                    © 2024 Mohammed Riyazuddin. All rights reserved.
-                </p>
-                <p class="text-gray-500 text-sm">
-                    Built with modern web technologies • Designed for accessibility and performance
-                </p>
-            </div>
+    <footer
+      class="bg-gray-900 dark:bg-black text-white py-12 transition-colors duration-300"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-400 mb-4">
+            © 2024 Mohammed Riyazuddin. All rights reserved.
+          </p>
+          <p class="text-gray-500 text-base">
+            Built with modern web technologies • Designed for accessibility and
+            performance
+          </p>
         </div>
+      </div>
     </footer>
     <!-- @END_COMPONENT: Footer -->
 
     <script>
-        // Wrap all JavaScript in an IIFE to avoid global namespace pollution
-        (function() {
-            'use strict';
+      // Wrap all JavaScript in an IIFE to avoid global namespace pollution
+      (function () {
+        "use strict";
 
-            // Theme Management System
-            const themeManager = {
-                // Initialize theme system
-                init() {
-                    this.themeToggle = document.getElementById('theme-toggle');
-                    this.mobileThemeToggle = document.getElementById('mobile-theme-toggle');
-                    
-                    // Set initial theme based on user preference or system setting
-                    const savedTheme = localStorage.getItem('theme');
-                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                    
-                    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                        this.setDarkMode(true);
-                    }
-                    
-                    // Add event listeners for theme toggle buttons
-                    this.themeToggle?.addEventListener('click', () => this.toggleTheme());
-                    this.mobileThemeToggle?.addEventListener('click', () => this.toggleTheme());
-                },
+        // Theme Management System
+        const themeManager = {
+          // Initialize theme system
+          init() {
+            this.themeToggle = document.getElementById("theme-toggle");
+            this.mobileThemeToggle = document.getElementById(
+              "mobile-theme-toggle",
+            );
 
-                // Toggle between light and dark themes
-                toggleTheme() {
-                    const isDark = document.documentElement.classList.contains('dark');
-                    this.setDarkMode(!isDark);
-                },
+            // Set initial theme based on user preference or system setting
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia(
+              "(prefers-color-scheme: dark)",
+            ).matches;
 
-                // Set theme mode (true for dark, false for light)
-                setDarkMode(isDark) {
-                    if (isDark) {
-                        document.documentElement.classList.add('dark');
-                        localStorage.setItem('theme', 'dark');
-                    } else {
-                        document.documentElement.classList.remove('dark');
-                        localStorage.setItem('theme', 'light');
-                    }
-                }
-            };
+            if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+              this.setDarkMode(true);
+            }
 
-            // Navigation Management System
-            const navigationManager = {
-                // Initialize navigation system
-                init() {
-                    this.mobileMenuButton = document.getElementById('mobile-menu-button');
-                    this.mobileMenu = document.getElementById('mobile-menu');
-                    this.navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-                    
-                    // Add event listeners
-                    this.mobileMenuButton?.addEventListener('click', () => this.toggleMobileMenu());
-                    this.navLinks.forEach(link => {
-                        link.addEventListener('click', (e) => this.handleNavClick(e));
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (!e.target.closest('nav')) {
-                            this.closeMobileMenu();
-                        }
-                    });
-                },
+            // Add event listeners for theme toggle buttons
+            this.themeToggle?.addEventListener("click", () =>
+              this.toggleTheme(),
+            );
+            this.mobileThemeToggle?.addEventListener("click", () =>
+              this.toggleTheme(),
+            );
+          },
 
-                // Toggle mobile menu visibility
-                toggleMobileMenu() {
-                    this.mobileMenu?.classList.toggle('hidden');
-                },
+          // Toggle between light and dark themes
+          toggleTheme() {
+            const isDark = document.documentElement.classList.contains("dark");
+            this.setDarkMode(!isDark);
+          },
 
-                // Close mobile menu
-                closeMobileMenu() {
-                    this.mobileMenu?.classList.add('hidden');
-                },
+          // Set theme mode (true for dark, false for light)
+          setDarkMode(isDark) {
+            if (isDark) {
+              document.documentElement.classList.add("dark");
+              localStorage.setItem("theme", "dark");
+            } else {
+              document.documentElement.classList.remove("dark");
+              localStorage.setItem("theme", "light");
+            }
+          },
+        };
 
-                // Handle navigation link clicks for smooth scrolling
-                handleNavClick(e) {
-                    e.preventDefault();
-                    const href = e.target.getAttribute('href');
-                    
-                    if (href.startsWith('#')) {
-                        const targetSection = document.querySelector(href);
-                        if (targetSection) {
-                            // Calculate offset for fixed header
-                            const headerOffset = 80;
-                            const elementPosition = targetSection.getBoundingClientRect().top;
-                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        // Navigation Management System
+        const navigationManager = {
+          // Initialize navigation system
+          init() {
+            this.mobileMenuButton =
+              document.getElementById("mobile-menu-button");
+            this.mobileMenu = document.getElementById("mobile-menu");
+            this.navLinks = document.querySelectorAll(
+              ".nav-link, .mobile-nav-link",
+            );
 
-                            // Smooth scroll to target section
-                            window.scrollTo({
-                                top: offsetPosition,
-                                behavior: 'smooth'
-                            });
-                            
-                            // Close mobile menu if open
-                            this.closeMobileMenu();
-                        }
-                    }
-                }
-            };
-
-            // Form Management System
-            const formManager = {
-                // Initialize form handling
-                init() {
-                    const contactForm = document.querySelector('form');
-                    contactForm?.addEventListener('submit', (e) => this.handleFormSubmit(e));
-                },
-
-                // Handle form submission
-                handleFormSubmit(e) {
-                    e.preventDefault();
-                    
-                    // Get form data
-                    const formData = new FormData(e.target);
-                    const data = {
-                        name: formData.get('name'),
-                        email: formData.get('email'),
-                        subject: formData.get('subject'),
-                        message: formData.get('message')
-                    };
-                    
-                    // Basic validation
-                    if (!this.validateForm(data)) {
-                        return;
-                    }
-                    
-                    // TODO: Implement actual form submission
-                    // In a real implementation, you would send this data to a backend service
-                    console.log('Form submission data:', data);
-                    
-                    // Show success message (placeholder)
-                    this.showFormMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
-                    
-                    // Reset form
-                    e.target.reset();
-                },
-
-                // Validate form data
-                validateForm(data) {
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    
-                    if (!data.name.trim()) {
-                        this.showFormMessage('Please enter your name.', 'error');
-                        return false;
-                    }
-                    
-                    if (!emailRegex.test(data.email)) {
-                        this.showFormMessage('Please enter a valid email address.', 'error');
-                        return false;
-                    }
-                    
-                    if (!data.subject.trim()) {
-                        this.showFormMessage('Please enter a subject.', 'error');
-                        return false;
-                    }
-                    
-                    if (!data.message.trim() || data.message.trim().length < 10) {
-                        this.showFormMessage('Please enter a message (at least 10 characters).', 'error');
-                        return false;
-                    }
-                    
-                    return true;
-                },
-
-                // Show form feedback messages
-                showFormMessage(message, type) {
-                    // Remove existing message
-                    const existingMessage = document.querySelector('.form-message');
-                    existingMessage?.remove();
-                    
-                    // Create new message element
-                    const messageEl = document.createElement('div');
-                    messageEl.className = `form-message p-4 rounded-lg mb-4 ${
-                        type === 'success' 
-                            ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 border border-green-200 dark:border-green-700' 
-                            : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border border-red-200 dark:border-red-700'
-                    }`;
-                    messageEl.textContent = message;
-                    
-                    // Insert message before form
-                    const form = document.querySelector('form');
-                    form?.parentNode.insertBefore(messageEl, form);
-                    
-                    // Auto-remove message after 5 seconds
-                    setTimeout(() => {
-                        messageEl.remove();
-                    }, 5000);
-                }
-            };
-
-            // Animation Manager for scroll-triggered animations
-            const animationManager = {
-                // Initialize scroll animations
-                init() {
-                    this.observeElements();
-                },
-
-                // Set up intersection observer for scroll animations
-                observeElements() {
-                    const animatedElements = document.querySelectorAll('.animate-fade-in, .animate-slide-up');
-                    
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.style.opacity = '1';
-                                entry.target.style.transform = 'translateY(0)';
-                            }
-                        });
-                    }, {
-                        threshold: 0.1,
-                        rootMargin: '0px 0px -50px 0px'
-                    });
-
-                    // Initially hide elements and observe them
-                    animatedElements.forEach(el => {
-                        el.style.opacity = '0';
-                        el.style.transform = 'translateY(30px)';
-                        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-                        observer.observe(el);
-                    });
-                }
-            };
-
-            // Performance Manager
-            const performanceManager = {
-                // Initialize performance optimizations
-                init() {
-                    this.preloadCriticalResources();
-                    this.setupLazyLoading();
-                },
-
-                // Preload critical resources
-                preloadCriticalResources() {
-                    // Preload important fonts
-                    const link = document.createElement('link');
-                    link.rel = 'preload';
-                    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap';
-                    link.as = 'style';
-                    link.onload = function() { this.rel = 'stylesheet'; };
-                    document.head.appendChild(link);
-                },
-
-                // Setup lazy loading for images and heavy content
-                setupLazyLoading() {
-                    // Lazy load images when they come into viewport
-                    const images = document.querySelectorAll('img[data-src]');
-                    const imageObserver = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                const img = entry.target;
-                                img.src = img.dataset.src;
-                                img.removeAttribute('data-src');
-                                imageObserver.unobserve(img);
-                            }
-                        });
-                    });
-
-                    images.forEach(img => imageObserver.observe(img));
-                }
-            };
-
-            // Accessibility Manager
-            const accessibilityManager = {
-                // Initialize accessibility features
-                init() {
-                    this.setupKeyboardNavigation();
-                    this.setupFocusManagement();
-                    this.setupScreenReaderSupport();
-                },
-
-                // Setup keyboard navigation
-                setupKeyboardNavigation() {
-                    // Handle Escape key to close mobile menu
-                    document.addEventListener('keydown', (e) => {
-                        if (e.key === 'Escape') {
-                            navigationManager.closeMobileMenu();
-                        }
-                    });
-                },
-
-                // Setup focus management
-                setupFocusManagement() {
-                    // Ensure focus is properly managed when mobile menu opens/closes
-                    const mobileMenuButton = document.getElementById('mobile-menu-button');
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    
-                    mobileMenuButton?.addEventListener('click', () => {
-                        setTimeout(() => {
-                            if (!mobileMenu?.classList.contains('hidden')) {
-                                const firstLink = mobileMenu.querySelector('a');
-                                firstLink?.focus();
-                            }
-                        }, 100);
-                    });
-                },
-
-                // Setup screen reader support
-                setupScreenReaderSupport() {
-                    // Add ARIA labels and states dynamically
-                    const themeToggle = document.getElementById('theme-toggle');
-                    const mobileMenuButton = document.getElementById('mobile-menu-button');
-                    
-                    // Update theme toggle aria-label based on current theme
-                    const updateThemeLabel = () => {
-                        const isDark = document.documentElement.classList.contains('dark');
-                        const label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
-                        themeToggle?.setAttribute('aria-label', label);
-                    };
-                    
-                    updateThemeLabel();
-                    themeToggle?.addEventListener('click', updateThemeLabel);
-                    
-                    // Update mobile menu button aria-expanded
-                    mobileMenuButton?.addEventListener('click', () => {
-                        setTimeout(() => {
-                            const isExpanded = !document.getElementById('mobile-menu')?.classList.contains('hidden');
-                            mobileMenuButton.setAttribute('aria-expanded', isExpanded.toString());
-                        }, 100);
-                    });
-                }
-            };
-
-            // Initialize all managers when DOM is loaded
-            document.addEventListener('DOMContentLoaded', () => {
-                // Initialize all systems
-                themeManager.init();
-                navigationManager.init();
-                formManager.init();
-                animationManager.init();
-                performanceManager.init();
-                accessibilityManager.init();
-                
-                console.log('Portfolio website initialized successfully!');
-                
-                // TODO: Add Google Analytics or other tracking
-                // TODO: Implement service worker for offline functionality
-                // TODO: Add real-time form submission to backend service
-                // TODO: Implement resume download functionality
-                // TODO: Add blog integration if needed
-                // TODO: Implement contact form backend processing
+            // Add event listeners
+            this.mobileMenuButton?.addEventListener("click", () =>
+              this.toggleMobileMenu(),
+            );
+            this.navLinks.forEach((link) => {
+              link.addEventListener("click", (e) => this.handleNavClick(e));
             });
 
-        })();
+            // Close mobile menu when clicking outside
+            document.addEventListener("click", (e) => {
+              if (!e.target.closest("nav")) {
+                this.closeMobileMenu();
+              }
+            });
+          },
+
+          // Toggle mobile menu visibility
+          toggleMobileMenu() {
+            this.mobileMenu?.classList.toggle("hidden");
+          },
+
+          // Close mobile menu
+          closeMobileMenu() {
+            this.mobileMenu?.classList.add("hidden");
+          },
+
+          // Handle navigation link clicks for smooth scrolling
+          handleNavClick(e) {
+            e.preventDefault();
+            const href = e.target.getAttribute("href");
+
+            if (href.startsWith("#")) {
+              const targetSection = document.querySelector(href);
+              if (targetSection) {
+                // Calculate offset for fixed header
+                const headerOffset = 80;
+                const elementPosition =
+                  targetSection.getBoundingClientRect().top;
+                const offsetPosition =
+                  elementPosition + window.pageYOffset - headerOffset;
+
+                // Smooth scroll to target section
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth",
+                });
+
+                // Close mobile menu if open
+                this.closeMobileMenu();
+              }
+            }
+          },
+        };
+
+        // Form Management System
+        const formManager = {
+          // Initialize form handling
+          init() {
+            const contactForm = document.querySelector("form");
+            contactForm?.addEventListener("submit", (e) =>
+              this.handleFormSubmit(e),
+            );
+          },
+
+          // Handle form submission
+          handleFormSubmit(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = {
+              name: formData.get("name"),
+              email: formData.get("email"),
+              subject: formData.get("subject"),
+              message: formData.get("message"),
+            };
+
+            // Basic validation
+            if (!this.validateForm(data)) {
+              return;
+            }
+
+            // TODO: Implement actual form submission
+            // In a real implementation, you would send this data to a backend service
+            console.log("Form submission data:", data);
+
+            // Show success message (placeholder)
+            this.showFormMessage(
+              "Message sent successfully! I'll get back to you soon.",
+              "success",
+            );
+
+            // Reset form
+            e.target.reset();
+          },
+
+          // Validate form data
+          validateForm(data) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!data.name.trim()) {
+              this.showFormMessage("Please enter your name.", "error");
+              return false;
+            }
+
+            if (!emailRegex.test(data.email)) {
+              this.showFormMessage(
+                "Please enter a valid email address.",
+                "error",
+              );
+              return false;
+            }
+
+            if (!data.subject.trim()) {
+              this.showFormMessage("Please enter a subject.", "error");
+              return false;
+            }
+
+            if (!data.message.trim() || data.message.trim().length < 10) {
+              this.showFormMessage(
+                "Please enter a message (at least 10 characters).",
+                "error",
+              );
+              return false;
+            }
+
+            return true;
+          },
+
+          // Show form feedback messages
+          showFormMessage(message, type) {
+            // Remove existing message
+            const existingMessage = document.querySelector(".form-message");
+            existingMessage?.remove();
+
+            // Create new message element
+            const messageEl = document.createElement("div");
+            messageEl.className = `form-message p-4 rounded-lg mb-4 ${
+              type === "success"
+                ? "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 border border-green-200 dark:border-green-700"
+                : "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 border border-red-200 dark:border-red-700"
+            }`;
+            messageEl.textContent = message;
+
+            // Insert message before form
+            const form = document.querySelector("form");
+            form?.parentNode.insertBefore(messageEl, form);
+
+            // Auto-remove message after 5 seconds
+            setTimeout(() => {
+              messageEl.remove();
+            }, 5000);
+          },
+        };
+
+        // Animation Manager for scroll-triggered animations
+        const animationManager = {
+          // Initialize scroll animations
+          init() {
+            this.observeElements();
+          },
+
+          // Set up intersection observer for scroll animations
+          observeElements() {
+            const animatedElements = document.querySelectorAll(
+              ".animate-fade-in, .animate-slide-up",
+            );
+
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                  }
+                });
+              },
+              {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+              },
+            );
+
+            // Initially hide elements and observe them
+            animatedElements.forEach((el) => {
+              el.style.opacity = "0";
+              el.style.transform = "translateY(30px)";
+              el.style.transition =
+                "opacity 0.6s ease-out, transform 0.6s ease-out";
+              observer.observe(el);
+            });
+          },
+        };
+
+        // Performance Manager
+        const performanceManager = {
+          // Initialize performance optimizations
+          init() {
+            this.preloadCriticalResources();
+            this.setupLazyLoading();
+          },
+
+          // Preload critical resources
+          preloadCriticalResources() {
+            // Preload important fonts
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.href =
+              "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap";
+            link.as = "style";
+            link.onload = function () {
+              this.rel = "stylesheet";
+            };
+            document.head.appendChild(link);
+          },
+
+          // Setup lazy loading for images and heavy content
+          setupLazyLoading() {
+            // Lazy load images when they come into viewport
+            const images = document.querySelectorAll("img[data-src]");
+            const imageObserver = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const img = entry.target;
+                  img.src = img.dataset.src;
+                  img.removeAttribute("data-src");
+                  imageObserver.unobserve(img);
+                }
+              });
+            });
+
+            images.forEach((img) => imageObserver.observe(img));
+          },
+        };
+
+        // Accessibility Manager
+        const accessibilityManager = {
+          // Initialize accessibility features
+          init() {
+            this.setupKeyboardNavigation();
+            this.setupFocusManagement();
+            this.setupScreenReaderSupport();
+          },
+
+          // Setup keyboard navigation
+          setupKeyboardNavigation() {
+            // Handle Escape key to close mobile menu
+            document.addEventListener("keydown", (e) => {
+              if (e.key === "Escape") {
+                navigationManager.closeMobileMenu();
+              }
+            });
+          },
+
+          // Setup focus management
+          setupFocusManagement() {
+            // Ensure focus is properly managed when mobile menu opens/closes
+            const mobileMenuButton =
+              document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            mobileMenuButton?.addEventListener("click", () => {
+              setTimeout(() => {
+                if (!mobileMenu?.classList.contains("hidden")) {
+                  const firstLink = mobileMenu.querySelector("a");
+                  firstLink?.focus();
+                }
+              }, 100);
+            });
+          },
+
+          // Setup screen reader support
+          setupScreenReaderSupport() {
+            // Add ARIA labels and states dynamically
+            const themeToggle = document.getElementById("theme-toggle");
+            const mobileMenuButton =
+              document.getElementById("mobile-menu-button");
+
+            // Update theme toggle aria-label based on current theme
+            const updateThemeLabel = () => {
+              const isDark =
+                document.documentElement.classList.contains("dark");
+              const label = isDark
+                ? "Switch to light mode"
+                : "Switch to dark mode";
+              themeToggle?.setAttribute("aria-label", label);
+            };
+
+            updateThemeLabel();
+            themeToggle?.addEventListener("click", updateThemeLabel);
+
+            // Update mobile menu button aria-expanded
+            mobileMenuButton?.addEventListener("click", () => {
+              setTimeout(() => {
+                const isExpanded = !document
+                  .getElementById("mobile-menu")
+                  ?.classList.contains("hidden");
+                mobileMenuButton.setAttribute(
+                  "aria-expanded",
+                  isExpanded.toString(),
+                );
+              }, 100);
+            });
+          },
+        };
+
+        // Initialize all managers when DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+          // Initialize all systems
+          themeManager.init();
+          navigationManager.init();
+          formManager.init();
+          animationManager.init();
+          performanceManager.init();
+          accessibilityManager.init();
+
+          console.log("Portfolio website initialized successfully!");
+
+          // TODO: Add Google Analytics or other tracking
+          // TODO: Implement service worker for offline functionality
+          // TODO: Add real-time form submission to backend service
+          // TODO: Implement resume download functionality
+          // TODO: Add blog integration if needed
+          // TODO: Implement contact form backend processing
+        });
+      })();
     </script>
-</body>
+  </body>
 </html>

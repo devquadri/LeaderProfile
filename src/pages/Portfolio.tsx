@@ -73,7 +73,7 @@ function NavBar({ dark, onToggle }: { dark: boolean; onToggle: () => void }) {
       <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="#"
-          className="text-sm font-semibold text-foreground tracking-tight hover:text-muted-foreground transition-colors"
+          className="text-base font-semibold text-foreground tracking-tight hover:text-muted-foreground transition-colors"
         >
           mriyazuddin.com
         </a>
@@ -82,7 +82,7 @@ function NavBar({ dark, onToggle }: { dark: boolean; onToggle: () => void }) {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="px-3 py-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-muted"
+              className="px-3 py-1.5 text-base text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-muted"
             >
               {item}
             </a>
@@ -122,8 +122,8 @@ function ExperienceCard({
         <div className="pb-10 flex-1 min-w-0">
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-1">
             <h3 className="font-semibold text-foreground">{job.role}</h3>
-            <span className="text-muted-foreground text-sm">—</span>
-            <span className="text-sm font-medium text-foreground/80">
+            <span className="text-muted-foreground text-base">—</span>
+            <span className="text-base font-medium text-foreground/80">
               {job.company}
             </span>
             <span className="text-xs text-muted-foreground">
@@ -134,7 +134,7 @@ function ExperienceCard({
             {job.period}
           </p>
           <p
-            className={`text-sm text-muted-foreground leading-relaxed ${expanded ? "" : "line-clamp-3"}`}
+            className={`text-base text-muted-foreground leading-relaxed ${expanded ? "" : "line-clamp-3"}`}
           >
             {job.description}
           </p>
@@ -149,7 +149,7 @@ function ExperienceCard({
               {job.highlights.map((h, i) => (
                 <li
                   key={i}
-                  className="flex gap-2 text-sm text-muted-foreground leading-relaxed"
+                  className="flex gap-2 text-base text-muted-foreground leading-relaxed"
                 >
                   <span className="text-foreground/40 mt-0.5 shrink-0">→</span>
                   <span>{h}</span>
@@ -173,7 +173,7 @@ function SkillPill({ label }: { label: string }) {
 
 function AchievementItem({ text }: { text: string }) {
   return (
-    <div className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+    <div className="flex gap-3 text-base text-muted-foreground leading-relaxed">
       <span className="text-foreground font-semibold mt-0.5 shrink-0 text-xs">
         ✦
       </span>
@@ -266,7 +266,7 @@ export default function Portfolio() {
         <div className="flex flex-wrap gap-3">
           <a
             href={`mailto:${contact.email}`}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-foreground text-background text-base font-medium hover:opacity-90 transition-opacity"
           >
             <svg
               width="14"
@@ -285,12 +285,33 @@ export default function Portfolio() {
             href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:bg-muted transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-base font-medium text-foreground hover:bg-muted transition-colors"
           >
             <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
             LinkedIn
+          </a>
+          <a
+            href="/resume.pdf"
+            download="Mohammed_Riyazuddin_Resume.pdf"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-base font-medium text-foreground hover:bg-muted transition-colors"
+          >
+            <svg
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Resume
           </a>
         </div>
 
@@ -320,7 +341,7 @@ export default function Portfolio() {
       {/* About / Summary */}
       <section className="max-w-4xl mx-auto px-6 py-12 border-t border-border">
         <SectionLabel>About</SectionLabel>
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <p className="text-base text-muted-foreground leading-relaxed">
           {summary}
         </p>
       </section>
@@ -410,7 +431,7 @@ export default function Portfolio() {
               {languages.map((l) => (
                 <div
                   key={l.language}
-                  className="flex items-center gap-2 text-sm text-muted-foreground"
+                  className="flex items-center gap-2 text-base text-muted-foreground"
                 >
                   <span className="font-medium text-foreground">
                     {l.language}
@@ -430,7 +451,7 @@ export default function Portfolio() {
         {education.map((edu, i) => (
           <div key={i}>
             <h3 className="font-semibold text-foreground">{edu.degree}</h3>
-            <p className="text-sm text-muted-foreground mt-1">
+            <p className="text-base text-muted-foreground mt-1">
               {edu.institution} · {edu.location}
             </p>
           </div>
@@ -446,7 +467,7 @@ export default function Portfolio() {
         <div className="space-y-3">
           <a
             href={`mailto:${contact.email}`}
-            className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
+            className="flex items-center gap-3 text-base text-muted-foreground hover:text-foreground transition-colors group"
           >
             <span className="w-8 h-8 flex items-center justify-center rounded-lg border border-border group-hover:border-foreground/30 transition-colors bg-card">
               <svg
@@ -463,7 +484,7 @@ export default function Portfolio() {
             </span>
             {contact.email}
           </a>
-          <div className="flex items-center gap-3 text-sm text-muted-foreground">
+          <div className="flex items-center gap-3 text-base text-muted-foreground">
             <span className="w-8 h-8 flex items-center justify-center rounded-lg border border-border bg-card">
               <svg
                 width="14"
@@ -478,7 +499,7 @@ export default function Portfolio() {
             </span>
             {contact.phone}
           </div>
-          <div className="flex items-center gap-3 text-sm text-muted-foreground">
+          <div className="flex items-center gap-3 text-base text-muted-foreground">
             <span className="w-8 h-8 flex items-center justify-center rounded-lg border border-border bg-card">
               <svg
                 width="14"
@@ -498,7 +519,7 @@ export default function Portfolio() {
             href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
+            className="flex items-center gap-3 text-base text-muted-foreground hover:text-foreground transition-colors group"
           >
             <span className="w-8 h-8 flex items-center justify-center rounded-lg border border-border group-hover:border-foreground/30 transition-colors bg-card">
               <svg
