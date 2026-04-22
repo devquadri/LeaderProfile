@@ -227,9 +227,8 @@ export default function Portfolio() {
               {tagline}
             </p>
           </div>
-          {/* Profile photo — replace photo.jpg in client/public/ with your own image */}
           <div className="shrink-0 mt-1">
-            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-border bg-muted shadow-sm">
+            <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-2 border-border bg-muted shadow-sm">
               <img
                 src="/photo.jpg"
                 alt="Mohammed Riyazuddin"
