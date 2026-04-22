@@ -466,7 +466,7 @@ export default function Portfolio() {
         <SectionLabel>Contact</SectionLabel>
         <div className="space-y-3">
           <a
-            href={`mailto:${contact.email}`}
+            href={`mailto:${contact.email}?subject=Inquiry from Portfolio`}
             className="flex items-center gap-3 text-base text-muted-foreground hover:text-foreground transition-colors group"
           >
             <span className="w-8 h-8 flex items-center justify-center rounded-lg border border-border group-hover:border-foreground/30 transition-colors bg-card">
