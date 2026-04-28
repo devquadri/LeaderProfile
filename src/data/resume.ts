@@ -75,6 +75,19 @@ export const resumeData = {
       ],
     },
     {
+      company: "ESW Capital (Crossover.com)",
+      location: "Remote",
+      role: "Customer Support Manager",
+      period: "March 2018 – August 2018",
+      description:
+        "Directed a global team of L1 and L2 Support Engineers, focusing on operational efficiency, team accountability, and productivity enhancement. A major pillar of this role involved leading the complex transition of a newly acquired eCommerce platform into the ESW Capital support ecosystem, ensuring a seamless migration of services and uninterrupted support for the target organization's clients.",
+      highlights: [
+        "Managed 15-20 Support Engineers across scheduling, performance tracking, onboarding, and overall productivity enhancement.",
+        "Accelerated and successfully executed the transition of an acquired eCommerce platform's support services into the ESW ecosystem.",
+        "Streamlined support workflows by optimizing Zendesk for frontline customer engagement and Jira for efficient bug escalation and tracking.",
+      ],
+    },
+    {
       company: "Teradata India Pvt. Ltd",
       location: "Hyderabad",
       role: "Senior Manager Technical Support",
